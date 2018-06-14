@@ -1,0 +1,22 @@
+.social-links {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  animation: grow 1s ease-out;
+
+  &__link {
+    display: inline-block;
+  }
+
+  &__icon {
+    color: $mainBrown;
+    font-size: 3rem;
+    padding-left: 2rem;
+    transition: all .25s ease;
+
+    &:hover {
+      transform-origin: center;
+      transform: translateY(-3px) scale(1.2);
+    }
+  }
+}
