@@ -3077,12 +3077,12 @@ body {
 }
 
 .row {
-  max-width: 114rem;
+  max-width: 125rem;
   margin: 0 auto;
 }
 
 .row:not(:last-child) {
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
 .row::after {
@@ -3099,28 +3099,8 @@ body {
   margin-right: 5rem;
 }
 
-.row .col-1-of-2 {
-  width: calc((100% - 5rem) / 2);
-}
-
-.row .col-1-of-3 {
-  width: calc((100% - 2 * 5rem) / 3);
-}
-
-.row .col-2-of-3 {
-  width: calc(2 * ((100% - 2 * 5rem) / 3) + 5rem);
-}
-
-.row .col-1-of-4 {
-  width: calc((100% - 3 * 5rem) / 4);
-}
-
-.row .col-2-of-4 {
-  width: calc(2 * ((100% - 3 * 5rem) / 4) + 5rem);
-}
-
-.row .col-3-of-4 {
-  width: calc(3 * ((100% - 3 * 5rem) / 4) + 2 * 5rem);
+.row .col-1-of-5 {
+  width: calc((100% - 4 * 5rem) / 5);
 }
 
 .nav ul {
@@ -3174,13 +3154,13 @@ body {
 .music-card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 22rem;
-  width: 22rem;
+  height: 21rem;
+  width: 21rem;
   position: relative;
 }
 
 .music-card__side {
-  height: 22rem;
+  height: 21rem;
   transition: all .8s ease;
   position: absolute;
   top: 0;
@@ -3207,5 +3187,25 @@ body {
 
 .music-card:hover .music-card__side--back {
   transform: rotateY(0);
+}
+
+.music-card__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Lato';
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.music-card__subtitle {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  text-align: center;
+  color: gray;
 }
 /*# sourceMappingURL=main.css.map */
