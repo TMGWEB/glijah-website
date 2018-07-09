@@ -1,0 +1,32 @@
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  border: 2px solid $color-white;
+  height: 5rem;
+  width: 12rem;
+  border-radius: 2.5rem;
+  background: $mainBrown;
+  color: $color-white;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: .4s all;
+
+  &:hover {
+    color: $mainBrown;
+    background: $color-white;
+  }
+
+  &__play {
+
+  }
+
+  &__pause {
+
+  }
+}

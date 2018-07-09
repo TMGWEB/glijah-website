@@ -3154,6 +3154,7 @@ body {
 .music-card {
   perspective: 150rem;
   -moz-perspective: 150rem;
+  -webkit-perspective: 150rem;
   height: 21rem;
   width: 21rem;
   position: relative;
@@ -3177,7 +3178,7 @@ body {
 }
 
 .music-card__side--back {
-  background: blue;
+  background: #747474;
   transform: rotateY(180deg);
 }
 
@@ -3207,5 +3208,30 @@ body {
   width: 100%;
   text-align: center;
   color: gray;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  border: 2px solid #fff;
+  height: 5rem;
+  width: 12rem;
+  border-radius: 2.5rem;
+  background: #747474;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: .4s all;
+}
+
+.btn:hover {
+  color: #747474;
+  background: #fff;
 }
 /*# sourceMappingURL=main.css.map */

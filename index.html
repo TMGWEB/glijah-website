@@ -33,6 +33,7 @@
 
   <section class="music">
     <h3 class="heading__secondary heading__secondary--music u-center-text u-margin-bottom">Album Preview</h3>
+    <audio src=""></audio>
 
     <div class="row">
       <div class="col-1-of-5">
@@ -42,7 +43,7 @@
             <p class="music-card__subtitle">Track 1</p>
           </div>
           <div class="music-card__side music-card__side--back">
-            Text
+            <button class="btn btn__play" onclick="playTrackOne()">Play</button>
           </div>
         </div>
       </div>
@@ -50,10 +51,11 @@
       <div class="col-1-of-5">
         <div class="music-card">
           <div class="music-card__side music-card__side--front">
-            Text
+            <p class="music-card__title">Have Faith In God</p>
+            <p class="music-card__subtitle">Track 2</p>
           </div>
           <div class="music-card__side music-card__side--back">
-            Text
+            <button class="btn btn__play" onclick="playTrackTwo()">Play</button>
           </div>
         </div>
       </div>
@@ -61,10 +63,11 @@
       <div class="col-1-of-5">
         <div class="music-card">
           <div class="music-card__side music-card__side--front">
-            Text
+            <p class="music-card__title">Will you trust in the Lord</p>
+            <p class="music-card__subtitle">Track 3</p>
           </div>
           <div class="music-card__side music-card__side--back">
-            Text
+            <button class="btn btn__play" onclick="playTrackThree()">Play</button>
           </div>
         </div>
       </div>
@@ -153,5 +156,8 @@
   <section class="events">
     
   </section>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/music-card.js"></script>
 </body>
 </html>
