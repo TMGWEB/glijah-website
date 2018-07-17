@@ -4,14 +4,25 @@
   right: 2rem;
   animation: grow 1s ease-out;
 
+  &--center {
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    animation: none;
+  }
+
   &__link {
     display: inline-block;
+
+    &:not(:first-child) {
+      padding-left: 2rem;
+    }
   }
 
   &__icon {
     color: $mainBrown;
     font-size: 3rem;
-    padding-left: 2rem;
+    // padding-left: 2rem;
     transition: all .25s ease;
 
     &:hover {
@@ -19,4 +30,22 @@
       transform: translateY(-3px) scale(1.2);
     }
   }
+}
+
+.fa-youtube-play:hover {
+  color: red;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(#8a3ab9, #e95950);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-spotify:hover {
+  color:#1db954;
 }
