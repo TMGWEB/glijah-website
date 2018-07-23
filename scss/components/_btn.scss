@@ -1,32 +1,64 @@
 .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  border: 2px solid $color-white;
-  height: 5rem;
-  width: 12rem;
-  border-radius: 2.5rem;
-  background: $mainBrown;
-  color: $color-white;
-  font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.8rem;
   cursor: pointer;
   transition: .4s all;
 
-  &:hover {
-    color: $mainBrown;
-    background: $color-white;
-  }
-
   &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border: 2px solid $color-white;
+    height: 5rem;
+    width: 12rem;
+    border-radius: 2.5rem;
+    background: $mainBrown;
+    color: $color-white;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.8rem;
 
+    &:hover {
+      color: $mainBrown;
+      background: $color-white;
+    }
   }
 
-  &__pause {
+  &__header {
+    display: inline-block;
+    height: 4.5rem;
+    width: 15rem;
+    border: 2px solid $mainBrown;
+    border-radius: .4rem;
+    position: absolute;
+    margin-top: 1.5rem;
+    opacity: 0;
+    animation: moveInBottom 1s ease-out;
+    animation-delay: .4s;
+    animation-fill-mode: forwards;
+    padding: .8rem;
 
+    &:hover {
+      background: $mainBrown;
+    }
+
+    a {
+      text-decoration: none;
+      color: $mainBrown;
+      transition: .4s all;
+    }
+
+    &:hover a {
+      color: $color-white;
+    }
+
+    &--1 {
+      left: 30%;
+    }
+
+    &--2 {
+      right: 30%;
+    }
   }
 }
