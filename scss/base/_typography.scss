@@ -27,12 +27,12 @@ body {
 
   &__secondary {
     font-weight: 100;
-    margin: 2rem 0;
     font-size: 3.5rem;
     letter-spacing: .4rem;
     text-transform: uppercase;
 
     &--animated {
+      margin: 2rem 0;
       opacity: 0;
       animation: moveInBottom 1s ease-out;
       animation-delay: .2s;

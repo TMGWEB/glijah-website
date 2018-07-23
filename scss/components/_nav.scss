@@ -2,7 +2,10 @@
 
   ul {
     float: right;
+    opacity: 0;
     animation: grow 1s ease;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
   }
 
   li {

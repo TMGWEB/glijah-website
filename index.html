@@ -8,20 +8,20 @@
   <title>Glijah</title>
 </head>
 <body>
-  <section class="home">
+  <section class="home scroll-point">
     <nav class="nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Events</a></li>
         <li><a href="#">Contact</a></li>
+        <li><a id="album-link" href="#">Music</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Store</a></li>
       </ul>
     </nav>
 
     <div class="heading">
       <h3 class="heading__primary">GLIJAH</h3>
       <h3 class="heading__secondary heading__secondary--animated">The Book of Glijah Out Now!</h3>
-      <div class="btn btn__header btn__header--1"><a href="#">Album Preview</a></div>
+      <div id="album-btn" class="btn btn__header btn__header--1"><a href="#">Album Preview</a></div>
       <div class="btn btn__header btn__header--2"><a href="https://store.cdbaby.com/artist/Glijah" target="_blank">Purchase</a></div>
     </div>
 
@@ -29,11 +29,11 @@
       <a href="https://open.spotify.com/artist/2b5uxpOTn67QNawt0SpbTZ" target="_blank" class="social-links__link"><i class="social-links__icon fa fa-spotify"></i></a>
       <a href="https://www.instagram.com/glijahgriffiths/" target="_blank" class="social-links__link"><i class="social-links__icon fa fa-instagram"></i></a>
       <a href="#" class="social-links__link"><i class="social-links__icon fa fa-twitter"></i></a>
-      <a href="https://www.youtube.com/channel/UCkMTV0to-Cj0w2UXmIKasaA" class="social-links__link"><i class="social-links__icon fa fa-youtube-play"></i></a>
+      <a href="https://www.youtube.com/channel/UCkMTV0to-Cj0w2UXmIKasaA" target="_blank" class="social-links__link"><i class="social-links__icon fa fa-youtube-play"></i></a>
     </div>
   </section>
 
-  <section class="music">
+  <section data-section-name="album" class="music scroll-point">
     <h3 class="heading__secondary heading__secondary--music u-center-text u-margin-bottom">Album Preview</h3>
 
     <div class="row">
@@ -161,7 +161,7 @@
       </div>
   </section>
 
-  <section class="events">
+  <section class="events scroll-point">
     <h3 class="heading__secondary heading__secondary--events u-center-text u-margin-bottom">Upcoming Events</h3>
 
     <div class="event-card">
@@ -182,12 +182,14 @@
           <a href="https://open.spotify.com/artist/2b5uxpOTn67QNawt0SpbTZ" target="_blank" class="social-links__link"><i class="social-links__icon fa fa-spotify"></i></a>
           <a href="https://www.instagram.com/glijahgriffiths/" target="_blank" class="social-links__link"><i class="social-links__icon fa fa-instagram"></i></a>
           <a href="#" class="social-links__link"><i class="social-links__icon fa fa-twitter"></i></a>
-          <a href="https://www.youtube.com/channel/UCkMTV0to-Cj0w2UXmIKasaA" class="social-links__link"><i class="social-links__icon fa fa-youtube-play"></i></a>
+          <a href="https://www.youtube.com/channel/UCkMTV0to-Cj0w2UXmIKasaA" target="_blank" class="social-links__link"><i class="social-links__icon fa fa-youtube-play"></i></a>
         </div>
     <p>&copy; 2018 Glijah</p>
   </footer>
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.scrollify.js"></script>
   <script src="js/music-card.js"></script>
+  <script src="js/scroll-point.js"></script>
 </body>
 </html>

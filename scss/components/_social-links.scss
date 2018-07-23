@@ -2,13 +2,17 @@
   position: absolute;
   bottom: 2rem;
   right: 2rem;
+  opacity: 0;
   animation: grow 1s ease-out;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
 
   &--center {
     right: 50%;
     bottom: 50%;
     transform: translate(50%, 50%);
     animation: none;
+    opacity:1;
   }
 
   &__link {

@@ -3131,13 +3131,13 @@ body {
 
 .heading__secondary {
   font-weight: 100;
-  margin: 2rem 0;
   font-size: 3.5rem;
   letter-spacing: .4rem;
   text-transform: uppercase;
 }
 
 .heading__secondary--animated {
+  margin: 2rem 0;
   opacity: 0;
   -webkit-animation: moveInBottom 1s ease-out;
           animation: moveInBottom 1s ease-out;
@@ -3230,8 +3230,13 @@ body {
 
 .nav ul {
   float: right;
+  opacity: 0;
   -webkit-animation: grow 1s ease;
           animation: grow 1s ease;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .nav li {
@@ -3260,8 +3265,13 @@ body {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
+  opacity: 0;
   -webkit-animation: grow 1s ease-out;
           animation: grow 1s ease-out;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .social-links--center {
@@ -3271,6 +3281,7 @@ body {
           transform: translate(50%, 50%);
   -webkit-animation: none;
           animation: none;
+  opacity: 1;
 }
 
 .social-links__link {
