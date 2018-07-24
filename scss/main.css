@@ -3178,6 +3178,12 @@ body {
   overflow: hidden;
 }
 
+.album__photo {
+  background: url(../img/AlbumCover2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .events {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(185, 163, 148, 0.5)), to(rgba(116, 116, 116, 0.5))), url(../img/album-xl.jpg);
   background-image: linear-gradient(to bottom, rgba(185, 163, 148, 0.5), rgba(116, 116, 116, 0.5)), url(../img/album-xl.jpg);
@@ -3201,31 +3207,52 @@ body {
   text-align: center;
 }
 
-.row {
-  max-width: 125rem;
-  margin: 0 auto;
+.l {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: left;
 }
 
-.row:not(:last-child) {
-  margin-bottom: 5rem;
+.a {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: topleft;
+  background: blue;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.b {
+  -ms-grid-row: 1;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 2;
+  grid-area: topright;
+  background: green;
 }
 
-.row [class^="col-"] {
-  float: left;
+.c {
+  -ms-grid-row: 2;
+  -ms-grid-column: 7;
+  grid-area: bottomleft;
+  background: purple;
 }
 
-.row [class^="col-"]:not(:last-child) {
-  margin-right: 5rem;
+.d {
+  -ms-grid-row: 2;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 2;
+  grid-area: bottomright;
+  background: orange;
 }
 
-.row .col-1-of-5 {
-  width: calc((100% - 4 * 5rem) / 5);
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: ". . left left left . topleft topright topright ." ". . left left left . bottomleft bottomright bottomright .";
 }
 
 .nav ul {
@@ -3332,6 +3359,9 @@ body {
   height: 21rem;
   width: 21rem;
   position: relative;
+  margin: 1rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .music-card__side {
