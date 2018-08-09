@@ -3175,13 +3175,53 @@ body {
   background-attachment: fixed;
   min-height: 100vh;
   padding: 8rem 0;
-  overflow: hidden;
+  position: relative;
 }
 
-.album__photo {
+.album-box {
+  display: block;
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  left: 15rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 3;
+}
+
+.album-box__photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
   background: url(../img/AlbumCover2.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.album-box__caption {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.album-box__overlay {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
 
 .events {
@@ -3205,54 +3245,6 @@ body {
   bottom: 2rem;
   width: 100%;
   text-align: center;
-}
-
-.l {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  grid-area: left;
-}
-
-.a {
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
-  grid-area: topleft;
-  background: blue;
-}
-
-.b {
-  -ms-grid-row: 1;
-  -ms-grid-column: 8;
-  -ms-grid-column-span: 2;
-  grid-area: topright;
-  background: green;
-}
-
-.c {
-  -ms-grid-row: 2;
-  -ms-grid-column: 7;
-  grid-area: bottomleft;
-  background: purple;
-}
-
-.d {
-  -ms-grid-row: 2;
-  -ms-grid-column: 8;
-  -ms-grid-column-span: 2;
-  grid-area: bottomright;
-  background: orange;
-}
-
-.container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-      grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-      grid-template-areas: ". . left left left . topleft topright topright ." ". . left left left . bottomleft bottomright bottomright .";
 }
 
 .nav ul {
@@ -3360,8 +3352,23 @@ body {
   width: 21rem;
   position: relative;
   margin: 1rem;
-  -ms-grid-column-align: center;
-      justify-self: center;
+}
+
+.music-card__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 40%;
+  height: 46rem;
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: red;
 }
 
 .music-card__side {

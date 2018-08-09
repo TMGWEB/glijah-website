@@ -6,7 +6,18 @@
   width: 21rem;
   position: relative;
   margin: 1rem;
-  justify-self: center;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 46rem;
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    justify-content: space-evenly;
+    background: red;
+  }
 
   &__side {
     height: 21rem;
