@@ -12,7 +12,7 @@
     bottom: 50%;
     transform: translate(50%, 50%);
     animation: none;
-    opacity:1;
+    opacity: 1;
   }
 
   &__link {
@@ -26,8 +26,7 @@
   &__icon {
     color: $mainBrown;
     font-size: 3rem;
-    // padding-left: 2rem;
-    transition: all .25s ease;
+    transition: all 0.25s ease;
 
     &:hover {
       transform-origin: center;
@@ -36,7 +35,7 @@
   }
 }
 
-.fa-youtube-play:hover {
+.fa-youtube:hover {
   color: red;
 }
 
@@ -46,10 +45,11 @@
 
 .fa-instagram:hover {
   background: linear-gradient(#8a3ab9, #e95950);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .fa-spotify:hover {
-  color:#1db954;
+  color: #1db954;
 }

@@ -16,7 +16,6 @@ body {
   transform: translate(-50%, -50%);
   backface-visibility: hidden;
 
-
   &__primary {
     font-family: 'Montserrat';
     font-weight: 100;
@@ -27,15 +26,15 @@ body {
 
   &__secondary {
     font-weight: 100;
-    font-size: 3.5rem;
-    letter-spacing: .4rem;
-    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
 
     &--animated {
       margin: 2rem 0;
       opacity: 0;
       animation: moveInBottom 1s ease-out;
-      animation-delay: .2s;
+      animation-delay: 0.2s;
       animation-fill-mode: forwards;
     }
 

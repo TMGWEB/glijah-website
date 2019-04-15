@@ -1,47 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="scss/main.css">
-  <title>Glijah</title>
-</head>
-<body>
-  <section class="home scroll-point">
-    <nav class="nav">
-      <ul>
-        <li><a href="#">Contact</a></li>
-        <li><a id="album-link" href="#">Music</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Store</a></li>
-      </ul>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="scss/main.min.css" />
+    <title>Glijah</title>
+  </head>
+  <body>
+    <section class="home">
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a id="album-link" href="#">Music</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Store</a></li>
+        </ul>
+      </nav>
 
-    <div class="heading">
-      <h3 class="heading__primary">GLIJAH</h3>
-      <h3 class="heading__secondary heading__secondary--animated">The Book of Glijah Out Now!</h3>
-      <div id="album-btn" class="btn btn__header btn__header--1"><a href="#">Album Preview</a></div>
-      <div class="btn btn__header btn__header--2"><a href="https://store.cdbaby.com/artist/Glijah" target="_blank">Purchase</a></div>
-    </div>
-
-    <div class="social-links">
-      <a href="https://open.spotify.com/artist/2b5uxpOTn67QNawt0SpbTZ" target="_blank" class="social-links__link"><i class="social-links__icon fa fa-spotify"></i></a>
-      <a href="https://www.instagram.com/glijahgriffiths/" target="_blank" class="social-links__link"><i class="social-links__icon fa fa-instagram"></i></a>
-      <a href="#" class="social-links__link"><i class="social-links__icon fa fa-twitter"></i></a>
-      <a href="https://www.youtube.com/channel/UCkMTV0to-Cj0w2UXmIKasaA" target="_blank" class="social-links__link"><i class="social-links__icon fa fa-youtube-play"></i></a>
-    </div>
-  </section>
-
-  <section data-section-name="album" class="music scroll-point">
-    <h3 class="heading__secondary heading__secondary--music u-center-text u-margin-bottom">Album Preview</h3>
-
-    <div class="album-box">
-      <div class="album-box__photo">
-        <div class="album-box__overlay"></div>
-        <p class="album-box__caption">Book of Glijah Out Now!</p>
+      <div class="heading">
+        <h3 class="heading__primary">GLIJAH</h3>
+        <h3 class="heading__secondary heading__secondary--animated">
+          Music for the Kingdom
+        </h3>
+        <div id="album-btn" class="btn btn__header btn__header--1">
+          <a href="#">Album Preview</a>
+        </div>
+        <div class="btn btn__header btn__header--2">
+          <a href="https://store.cdbaby.com/artist/Glijah" target="_blank"
+            >Purchase</a
+          >
+        </div>
       </div>
-    </div>
+
+      <div class="social-links">
+        <a
+          href="https://open.spotify.com/artist/2b5uxpOTn67QNawt0SpbTZ"
+          target="_blank"
+          class="social-links__link"
+          ><i class="social-links__icon fab fa-spotify"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/glijahgriffiths/"
+          target="_blank"
+          class="social-links__link"
+          ><i class="social-links__icon fab fa-instagram"></i
+        ></a>
+        <a href="#" class="social-links__link"
+          ><i class="social-links__icon fab fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCkMTV0to-Cj0w2UXmIKasaA"
+          target="_blank"
+          class="social-links__link"
+          ><i class="social-links__icon fab fa-youtube"></i
+        ></a>
+      </div>
+    </section>
+
+    <section data-section-name="album" class="music">
+      <h3
+        class="heading__secondary heading__secondary--music u-center-text u-margin-bottom"
+      >
+        Album Preview
+      </h3>
+
+      <div class="album-box">
+        <div class="album-box__photo">
+          <div class="album-box__overlay"></div>
+          <p class="album-box__caption">Book of Glijah Out Now!</p>
+        </div>
+      </div>
 
       <div class="music-card__row">
         <div class="music-card--1">
@@ -51,11 +86,13 @@
               <p class="music-card__subtitle">Track 1</p>
             </div>
             <div class="music-card__side music-card__side--back">
-              <button class="btn btn__play" onclick="playTrackOne()">Play</button>
+              <button class="btn btn__play" data-track="0">
+                Play
+              </button>
             </div>
           </div>
         </div>
-          
+
         <div class="music-card--2">
           <div class="music-card">
             <div class="music-card__side music-card__side--front">
@@ -63,11 +100,13 @@
               <p class="music-card__subtitle">Track 2</p>
             </div>
             <div class="music-card__side music-card__side--back">
-              <button class="btn btn__play" onclick="playTrackTwo()">Play</button>
+              <button class="btn btn__play" data-track="1">
+                Play
+              </button>
             </div>
           </div>
         </div>
-      
+
         <div class="music-card--3">
           <div class="music-card">
             <div class="music-card__side music-card__side--front">
@@ -75,7 +114,9 @@
               <p class="music-card__subtitle">Track 4</p>
             </div>
             <div class="music-card__side music-card__side--back">
-              <button class="btn btn__play" onclick="playTrackFour()">Play</button>
+              <button class="btn btn__play" data-track="3">
+                Play
+              </button>
             </div>
           </div>
         </div>
@@ -87,42 +128,62 @@
               <p class="music-card__subtitle">Track 6</p>
             </div>
             <div class="music-card__side music-card__side--back">
-              <button class="btn btn__play" onclick="playTrackSix()">Play</button>
+              <button class="btn btn__play" data-track="5">
+                Play
+              </button>
             </div>
           </div>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section class="events scroll-point">
-    <h3 class="heading__secondary heading__secondary--events u-center-text u-margin-bottom">Upcoming Events</h3>
+    <section class="events">
+      <h3
+        class="heading__secondary heading__secondary--events u-center-text u-margin-bottom"
+      >
+        Upcoming Events
+      </h3>
 
-    <div class="event-card">
-      <div class="event-card__img"></div>
-      <div class="event-card__body">
-        <div class="event-card__title">
-          November 20, 2018
-        </div>
-        <div class="event-card__subtitle">
-          Come see Glijah perform at New Beginnings Anniversary Celebration!
+      <div class="event-card">
+        <div class="event-card__img"></div>
+        <div class="event-card__body">
+          <div class="event-card__title">
+            November 20, 2018
+          </div>
+          <div class="event-card__subtitle">
+            Come see Glijah perform at New Beginnings Anniversary Celebration!
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
+    <footer class="footer">
       <div class="social-links social-links--center">
-          <a href="https://open.spotify.com/artist/2b5uxpOTn67QNawt0SpbTZ" target="_blank" class="social-links__link"><i class="social-links__icon fa fa-spotify"></i></a>
-          <a href="https://www.instagram.com/glijahgriffiths/" target="_blank" class="social-links__link"><i class="social-links__icon fa fa-instagram"></i></a>
-          <a href="#" class="social-links__link"><i class="social-links__icon fa fa-twitter"></i></a>
-          <a href="https://www.youtube.com/channel/UCkMTV0to-Cj0w2UXmIKasaA" target="_blank" class="social-links__link"><i class="social-links__icon fa fa-youtube-play"></i></a>
-        </div>
-    <p>&copy; 2018 Glijah</p>
-  </footer>
+        <a
+          href="https://open.spotify.com/artist/2b5uxpOTn67QNawt0SpbTZ"
+          target="_blank"
+          class="social-links__link"
+          ><i class="social-links__icon fab fa-spotify"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/glijahgriffiths/"
+          target="_blank"
+          class="social-links__link"
+          ><i class="social-links__icon fab fa-instagram"></i
+        ></a>
+        <a href="#" class="social-links__link"
+          ><i class="social-links__icon fab fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCkMTV0to-Cj0w2UXmIKasaA"
+          target="_blank"
+          class="social-links__link"
+          ><i class="social-links__icon fab fa-youtube"></i
+        ></a>
+      </div>
+      <p>&copy; 2019 Glijah Productions</p>
+    </footer>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.scrollify.js"></script>
-  <script src="js/music-card.js"></script>
-  <script src="js/scroll-point.js"></script>
-</body>
+    <script src="js/music-card.js"></script>
+  </body>
 </html>
